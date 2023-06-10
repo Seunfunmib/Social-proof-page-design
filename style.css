@@ -1,0 +1,109 @@
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+body {
+  height: 100vh;
+  margin:auto;
+  
+  background-color: black;
+}
+main {
+  height:100vh;
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: white;
+}
+.container{
+  max-width: 70%;
+  height: 100vh;
+  /* background:green; */
+  margin: auto;
+}
+.company-detail-container{
+  display:flex;
+  padding-top:5rem;
+  justify-content: space-between;
+}
+.company-detail-container >div:first-child{
+  width:40%;
+}
+.company-detail-container >div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-top: 1.5rem;
+}
+.company-detail-container > div >div{
+color:red;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  background-color: yellow;
+  height:2rem;
+  width:15rem;
+  margin-right: 4rem;
+  border-radius: 0.3rem;
+}
+/* End of First section
+
+Start of Player's Review */
+.users-review{
+  margin-top: 7rem;
+}
+.users-review{
+  width:20rem;
+  height:10rem;
+  background-color: red;
+  border-radius: 0.3rem;
+
+}
+img{
+  border-radius: 50%;
+  height:2.5rem;
+  width:2.5rem;
+}
+.users-review > div > h3{
+  display: flex;
+  flex-direction: column;
+  column-gap: 0.5rem;
+  
+}
+.users-review > div > h3 >span{
+  color:pink;
+
+}
+.users-review >div{
+  max-width:90%;
+  margin: auto;
+  padding-top: 1rem;
+  font-size: 0.7rem;
+}
+
+
+/* .background-design{
+  border-radius: 30% 70% 56% 44% / 0% 40% 60% 100%;
+  height:10rem;
+  width:10rem;
+  background: red;
+} */
+
+
+
+
+
+
+
+
+
+/* .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);} */
