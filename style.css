@@ -25,6 +25,15 @@ main {
   /* background:green; */
   margin: auto;
 }
+.container > svg{
+  position: fixed;
+  /* width:30rem;
+  height:23rem; */
+}
+.container > svg:nth-child(2){
+  height: 50rem;
+  width: 50rem;
+}
 .company-detail-container{
   display:flex;
   padding-top:5rem;
@@ -53,14 +62,17 @@ color:red;
 /* End of First section
 
 Start of Player's Review */
-.users-review{
-  margin-top: 7rem;
+.users-review-container{
+  margin-top:7rem;
+  display: flex;
+  column-gap: 1.5rem;
 }
 .users-review{
-  width:20rem;
-  height:10rem;
-  background-color: red;
+  color: hsla(0, 0%, 100%, 0.774);
+  background-color: hsl(300, 43%, 22%);
   border-radius: 0.3rem;
+    width:15rem;
+  height:10rem;
 
 }
 img{
@@ -68,33 +80,32 @@ img{
   height:2.5rem;
   width:2.5rem;
 }
-.users-review > div > h3{
+.users-review > h3{
   display: flex;
-  flex-direction: column;
-  column-gap: 0.5rem;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1rem;
+  
   
 }
-.users-review > div > h3 >span{
+.users-review > h3 >span{
   color:pink;
+  font-size: 0.7rem;
+  
 
 }
 .users-review >div{
   max-width:90%;
   margin: auto;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   font-size: 0.7rem;
 }
-
-
-/* .background-design{
-  border-radius: 30% 70% 56% 44% / 0% 40% 60% 100%;
-  height:10rem;
-  width:10rem;
-  background: red;
-} */
-
-
-
+.users-review:nth-child(2){
+  margin-top: 0.5rem;
+}
+.users-review:nth-child(3){
+  margin-top: 1.2rem;
+}
 
 
 
