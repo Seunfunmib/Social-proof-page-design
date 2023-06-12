@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap');
 *,
 *::before,
 *::after {
@@ -10,19 +10,21 @@
 body {
   height: 100vh;
   margin:auto;
-  
   background-color: black;
 }
 main {
   height:100vh;
   max-width: 90%;
-  margin: 0 auto;
+  margin: auto;
   background-color: white;
+  display: grid;
+  place-content: center;
+
 }
 .container{
   max-width: 70%;
-  height: 100vh;
-  /* background:green; */
+  height: 90vh;
+  background:white;
   margin: auto;
 }
 .container > svg{
@@ -37,10 +39,26 @@ main {
 .company-detail-container{
   display:flex;
   padding-top:5rem;
-  justify-content: space-between;
+  column-gap: 9rem;
+  
 }
 .company-detail-container >div:first-child{
-  width:40%;
+  background-color: blue;
+  max-width:70%;
+}
+.company-detail-container >div>h1{
+  width:90%;
+  color:red;
+}
+.company-detail-container >div >h4{
+  color:hsla(302, 10%, 53%, 0.806);
+  width:100%;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  padding-top: 0.5rem;
+  background-color: purple;
+
 }
 .company-detail-container >div:nth-child(2){
   display: flex;
@@ -49,21 +67,32 @@ main {
   margin-top: 1.5rem;
 }
 .company-detail-container > div >div{
-color:red;
+color:hsl(300, 43%, 22%);
   font-size: 0.8rem;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
   display: flex;
+  column-gap: 0.5rem;
   align-items: center;
-  background-color: yellow;
+  justify-content: center;
+  background-color: hsla(302, 10%, 53%, 0.167);
   height:2rem;
-  width:15rem;
-  margin-right: 4rem;
+  width:20rem;
+  margin-right: 1rem;
   border-radius: 0.3rem;
+}
+
+.company-detail-container > div >div:nth-child(2){
+margin-left: 2rem;
+}
+.company-detail-container > div >div:nth-child(3){
+  margin-left: 4rem;
 }
 /* End of First section
 
 Start of Player's Review */
 .users-review-container{
-  margin-top:7rem;
+  margin-top:2rem;
   display: flex;
   column-gap: 1.5rem;
 }
@@ -71,33 +100,36 @@ Start of Player's Review */
   color: hsla(0, 0%, 100%, 0.774);
   background-color: hsl(300, 43%, 22%);
   border-radius: 0.3rem;
-    width:15rem;
+  width:15rem;
   height:10rem;
-
 }
 img{
   border-radius: 50%;
-  height:2.5rem;
-  width:2.5rem;
+  height:1.5rem;
+  width:1.5rem;
+  margin:2rem 0 0 1rem;
+
 }
 .users-review > h3{
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-size: 1rem;
-  
+  flex-direction: column;
+  font-size: 0.9rem;
+  position: relative;
+  bottom:1.9rem;
+  left:3rem;
+  font-family: 'League Spartan', sans-serif;
   
 }
 .users-review > h3 >span{
-  color:pink;
+  color:hsla(333, 80%, 67%, 0.518);
   font-size: 0.7rem;
-  
-
+  font-family: 'League Spartan', sans-serif;
 }
 .users-review >div{
   max-width:90%;
   margin: auto;
-  padding-top: 1.5rem;
+  margin-bottom: 3rem;
+  /* padding-bottom: 2rem; */
   font-size: 0.7rem;
 }
 .users-review:nth-child(2){
@@ -107,14 +139,71 @@ img{
   margin-top: 1.2rem;
 }
 
-
-
-
-
-
 /* .attribution {
     font-size: 11px;
     text-align: center;
   }
   .attribution a {
     color: hsl(228, 45%, 44%);} */
+
+
+@media (max-width:900px){
+  main{
+    background-color: black;
+  }
+.container{
+  max-width: 40%;
+  height:90%;
+  
+}
+.company-detail-container{
+  flex-direction: column;
+  justify-content: center;
+  padding-top: rem;
+}
+.company-detail-container >div:first-child{
+  background-color: yellow;
+  max-width:90%;
+  margin:auto;
+  justify-content: center;
+  text-align: center;
+}
+.company-detail-container > div >div{
+  max-width: 90%;
+  margin:auto;
+  display:flex;
+}
+.company-detail-container > div >div:nth-child(2),
+.company-detail-container > div >div:nth-child(3){
+  margin-left:initial;
+  margin:auto;
+}
+/* End of First section
+
+Start of Player's Review */
+.users-review-container{
+  margin-top:2rem;
+  display: flex;
+  flex-direction: column;
+}
+.users-review{
+  color: hsla(0, 0%, 100%, 0.774);
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 0.3rem;
+  width:15rem;
+  height:10rem;
+  max-width: 90%;
+  margin:auto;
+}
+.users-review > h3{
+  font-size: 0.6rem;
+  bottom:1.2rem;
+}
+
+.users-review > h3 >span{
+  color:hsla(333, 80%, 67%, 0.518);
+  font-size: 0.5rem;
+  font-family: 'League Spartan', sans-serif;
+}
+
+}
